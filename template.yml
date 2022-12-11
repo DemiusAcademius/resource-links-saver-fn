@@ -5,6 +5,7 @@ Resources:
   function:
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: resource-links-saver-fn
       CodeUri: build/distributions/resource-links-saver-fn-1.0.zip
       Handler: person.demius.saver.SaverHandler
       Runtime: java11
